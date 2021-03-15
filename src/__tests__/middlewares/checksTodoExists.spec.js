@@ -144,7 +144,7 @@ describe('checksTodoExists', () => {
 
     checksTodoExists(mockRequest, mockResponse, mockNext);
 
-    expect(mockResponse.status).toBeCalledWith(400);
+    expect(mockResponse.status).toBeCalledWith(404);
 
     expect(mockTodoSetter).not.toBeCalled();
     expect(mockUserSetter).not.toBeCalled();
